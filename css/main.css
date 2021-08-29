@@ -219,8 +219,7 @@ nav form i {
 
 
 /* Start OurServices */
-.ourServices .picWrapper {
-  width: 100%;
+.ourServices .card > img {
   height: 300px;
 }
 .ourServices .readMore {
