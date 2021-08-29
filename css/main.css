@@ -349,6 +349,10 @@ nav form i {
 .blog .firstBlog .blogLink {
   background-image: url("../img/news/1.JPG");
 }
+.blog .personInfoWrapper img {
+  height: 70px;
+  width: 70px;
+}
 .blog .firstBlog .personInfoWrapper .personPic {
   background-image: url("../img/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg");
 }
