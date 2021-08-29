@@ -315,58 +315,22 @@ nav form i {
 
 
 /* Start Blog */
-.blog .blogLink {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  display: block;
+.card .posted img {
+  width: 70px;
+  height: 70px;
 }
-.blog .blogLink:hover {
-  opacity: 0.8;
-}
-.blog .blogWrapper .personPic {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
-.blog .blogWrapper .date {
+.blog .date {
   color: #064acb;
   font-weight: bold;
 }
-.blog .blogWrapper .blogTitle {
+.blog .blogTitle {
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   color: #202020;
 }
-.blog .blogWrapper .blogTitle:hover {
+.blog .blogTitle:hover {
   color: #f79f24;
-}
-.blog .firstBlog .blogLink {
-  background-image: url("../img/news/1.JPG");
-}
-.blog .personInfoWrapper img {
-  height: 70px;
-  width: 70px;
-}
-.blog .firstBlog .personInfoWrapper .personPic {
-  background-image: url("../img/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg");
-}
-.blog .secondBlog .blogLink {
-  background-image: url("../img/news/2.JPG");
-}
-.blog .secondBlog .personInfoWrapper .personPic {
-  background-image: url("../img/person_3.jpg");
-}
-.blog .thirdBlog .blogLink {
-  background-image: url("../img/news/4.JPG");
-}
-.blog .thirdBlog .personInfoWrapper .personPic {
-  background-image: url("../img/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg");
 }
 /* End Blog */
 
