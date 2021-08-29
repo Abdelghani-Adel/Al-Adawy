@@ -10,45 +10,6 @@ body {
 
 
 
-/* GENERAL RULES */
-a, a:hover {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-}
-
-
-/* typography */
-.textTitle {
-  font-weight: bolder;
-  font-size: 3rem;
-  color: #FFF;
-  margin-bottom: 30px;
-}
-.text1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.text2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.text3 {
-  font-size: 1rem;
-}
-.text4 {
-  font-size: 0.8rem;
-}
-.mainColorTXT {
-  color: #f79f24;
-}
-.grayTXT {
-  color: #808080;
-}
-.whiteTXT {
-  color: #FFF;
-}
 
 
 /* customization */
@@ -70,27 +31,6 @@ img {
 
 
 
-/* End General Rules */
-
-
-h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-h4 {
-  color: #f79f24;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  word-spacing: 4px;
-  margin-bottom: 8px;
-}
-
-h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
-} 
 
 
 
@@ -274,16 +214,6 @@ nav form i {
 .counters {
   background-color: #202020;
   color: #FFF;
-}
-.counters .counter {
-  font-size: 2.5em;
-  color: #f79f24;
-  font-weight: bold;
-}
-.counters .counted {
-  font-size: 14px;
-  font-weight: bolder;
-  letter-spacing: 1.5px;
 }
 /* End Counters */
 

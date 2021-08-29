@@ -1,0 +1,119 @@
+:root {
+    /* --mainColor: #323232; */
+    --color2: #EEE;
+    --color3: #FFF;
+    --color4: #AAA;
+    --color5: #DDD;
+    --pm6: 4rem;
+}
+img {
+    max-width: 100%;
+}
+
+/* Padding 6 */
+.pt-6, .py-6 {
+    padding-top: var(--pm6);
+}
+.pb-6, .py-6 {
+    padding-bottom: var(--pm6);
+}
+.pr-6, .px-6 {
+    padding-right: var(--pm6);
+}
+.pl-6, .px-6 {
+    padding-left: var(--pm6);
+}
+
+/* Margin 6 */
+.mt-6, .my-6 {
+    margin-top: var(--pm6);
+}
+.mb-6, .my-6 {
+    margin-bottom: var(--pm6);
+}
+.mr-6, .mx-6 {
+    margin-right: var(--pm6);
+}
+.ml-6, .mx-6 {
+    margin-left: var(--pm6);
+}
+
+
+/* Typography */
+h1, .h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4, .h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h5, .h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mainTXT {
+    font-size: 1.2rem;
+    color: var(--mainColor);
+}
+.leadTXT {
+    font-size: 0.8rem;
+}
+
+.mainColorTXT {
+  color: #f79f24;
+}
+.grayTXT {
+  color: #808080;
+}
+.whiteTXT {
+  color: #FFF;
+}
+
+.lspace {
+    letter-spacing: 1px;
+}
+.wspace {
+    word-spacing: 1.4px;
+}
+
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* boostrap edit */
+a, a:hover {
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.7);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
