@@ -28,6 +28,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.Aclonica {
+  font-family: 'Aclonica', sans-serif;
+}
+h2 {
+  font-family: 'Viga', sans-serif;
+}
+.comapnyBrand {
+  font-family: 'Fugaz One', cursive;
+}
+
 
 
 
@@ -159,6 +169,13 @@ nav form i {
 
 
 /* Start OurServices */
+.ourServices .card {
+  transition: 0.3s;
+}
+.ourServices .card:hover {
+  box-shadow: 0 0 15px 1px grey;
+  transform: scale(1.07);
+}
 .ourServices .card > img {
   height: 300px;
 }
@@ -312,6 +329,7 @@ nav form i {
 }
 .ourProjects .project:hover {
   transform: scale(1.07);
+  box-shadow: 0 0 15px 1px grey;
 }
 .ourProjects .project .wrapper {
   background-color: #064acb;

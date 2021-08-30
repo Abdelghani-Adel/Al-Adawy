@@ -40,34 +40,17 @@ img {
 
 
 /* Typography */
-h1, .h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
 
-h2, .h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
 
-h4, .h4 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 8px;
+.display-5 {
+    font-size: 3rem;
+    font-weight: 300;
 }
-
-h5, .h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
+.bold {
+    font-weight: bold;
 }
-
-.mainTXT {
-    font-size: 1.2rem;
-    color: var(--mainColor);
-}
-.leadTXT {
-    font-size: 0.8rem;
+.bolder {
+    font-weight: bolder;
 }
 
 .mainColorTXT {
