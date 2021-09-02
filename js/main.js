@@ -142,12 +142,31 @@ scrollBtn.addEventListener("click", () => {
 // })
 
 
+
+
+loadDoc()
+let textArray;
+function loadDoc() {
+    let myXMLRequest = new XMLHttpRequest();
+    myXMLRequest.open("GET", "data.json", true);
+    myXMLRequest.send();
+    myXMLRequest.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            let jsonObject = JSON.parse(this.responseText);
+            textArray = jsonObject;
+            console.log(textArray)
+        };
+    };
+}
+
+
 let img = $(".ourServices img")
-img.click((event) => {
+img.click(function (event) {
+    // loadDoc();
 
     let current = event.currentTarget;
-    let imgSource = current.src
-    let title = current.alt
+    let imgSource = current.src;
+    let title = current.alt;
     let content = `<div class='popup-overlay'>
                         <div class="popup-box">
                             <div class='container'>
@@ -157,15 +176,13 @@ img.click((event) => {
                                     </div>
                                     <div class='col-md-6'>
                                         <h2 class='my-3 mainColorTXT text-center w-100'>${title}</h2>
-                                        <p class='lead'>The lift & slide system SUPREME S700 represents the new generation of ALUMIL’s high-end systems. It is an excellent solution for projects with demanding requirements, meeting the trend of “transparent” architecture through extensive glass surfaces, with high thermal insulation, safety, and modern design. Its minimal design and its various innovative characteristics, make it the ideal option for projects requiring wide spans for enhanced daylight, outstanding performance, and maximum ease of use.</p>
-                                        <button class='w-100 btn btn-success'>Get Quote</button>
+                                        <p class='lead'>${textArray[current.dataset.txt]}</p>
                                     </div>
                                 </div>
                             </div>
                             <span class="close-button">X</span>
                         </div>
                     </div>`
-
     $(document.body).append(content);
 })
 
