@@ -1,63 +1,20 @@
-let socialIcon = $(".social-icon"),
-    navLink = $('.navbar-light .navbar-nav .nav-item .nav-link'),
-    heroButton = $('.heroWrap button'),
-    serviceCard = $('.ourServices .card');
 
+
+
+
+// Hovering on price
 let prices = $('.pricing .priceWrapper');
-
-// prices.mouseenter((event) => {
-//     event.stopPropagation();
-//     prices.addClass('dimt');
-//     $(event.target).removeClass('dimt')
-//     $(event.target).addClass('scaleup')
-// })
-// prices.mouseleave(() => {
-//     prices.removeClass('dimt')
-//     prices.removeClass('scaleup')
-// })
-
-
-// prices.hover(
-//     (event) => {
-//         event.stopPropagation();
-//         prices.addClass('dimt');
-//         $(event.target).addClass('scaleup');
-//         $(event.target).removeClass('dimt');
-//     } , () => {
-//         prices.removeClass('dimt');
-//         prices.removeClass('scaleup');
-//     }
-// )
-
-
 prices.hover(
     (event) => {
-        event.stopPropagation();
+        // event.stopPropagation();
         prices.addClass('dimt');
-        $(event.target).addClass('scaleup');
-        $(event.target).removeClass('dimt');
+        $(event.currentTarget).addClass('scaleup');
+        $(event.currentTarget).removeClass('dimt');
     } , () => {
-        prices.removeClass('dimt');
-        prices.removeClass('scaleup');
+        prices.removeClass('dimt scaleup');
+        // $('.scaleup').removeClass('scaleup');
     }
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Our Mission Section Tabs
@@ -80,20 +37,6 @@ tabsArray.forEach((tab) => {
 
 
 
-// Counters
-$('.counter').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 3000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
-
-
 // Navigate to to top "button"
 let scrollBtn = document.querySelector(".scroll-btn i");
 window.addEventListener("scroll", () => {
@@ -111,39 +54,7 @@ scrollBtn.addEventListener("click", () => {
 
 
 
-// let ourimages = document.querySelectorAll(".ourServices img")
-// ourimages.forEach(img => {
-//     img.addEventListener('click', (e) => {
-//         let overlay = document.createElement("div");
-//         overlay.className = 'popup-overlay';
-
-//         let popupBox = document.createElement("div");
-//         popupBox.className = 'popup-box';
-//         let popupImage = document.createElement("img");
-//         popupImage.src = img.src
-
-//         document.body.appendChild(overlay);
-//         popupBox.appendChild(popupImage);
-//         overlay.appendChild(popupBox)
-
-//         if (img.alt) {
-//             let imgHeading = document.createElement('h2');
-//             let imgText = document.createTextNode(img.alt);
-//             imgHeading.appendChild(imgText);
-//             popupBox.appendChild(imgHeading)
-//         }
-
-//         let closeButton = document.createElement('span');
-//         let closeButtonText = document.createTextNode("x");
-//         closeButton.appendChild(closeButtonText);
-//         closeButton.className = 'close-button';
-//         popupBox.appendChild(closeButton);
-//     })
-// })
-
-
-
-
+// Function to get services data and put them into array
 loadDoc()
 let textArray;
 function loadDoc() {
@@ -159,11 +70,9 @@ function loadDoc() {
     };
 }
 
-
+// Adding overlay div with service data when clicked on image
 let img = $(".ourServices img")
 img.click(function (event) {
-    // loadDoc();
-
     let current = event.currentTarget;
     let imgSource = current.src;
     let title = current.alt;
@@ -186,9 +95,7 @@ img.click(function (event) {
     $(document.body).append(content);
 })
 
-
-
-
+// Close button for the service image overlay
 document.addEventListener("click", function(e) {
     if (e.target.className == 'close-button' || e.target.className == 'popup-overlay') {
         document.querySelector('.popup-overlay').remove();
