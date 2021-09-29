@@ -1,18 +1,22 @@
 
 
 
+function hoverOnPrice(event) {
+    prices.addClass('dimt');
+    $(event.currentTarget).addClass('scaleup');
+    $(event.currentTarget).removeClass('dimt');
+}
+function hoverOutPrice() {
+    prices.removeClass('dimt scaleup')
+}
 
 // Hovering on price
 let prices = $('.pricing .priceWrapper');
 prices.hover(
     (event) => {
-        // event.stopPropagation();
-        prices.addClass('dimt');
-        $(event.currentTarget).addClass('scaleup');
-        $(event.currentTarget).removeClass('dimt');
+        hoverOnPrice(event)
     } , () => {
-        prices.removeClass('dimt scaleup');
-        // $('.scaleup').removeClass('scaleup');
+        hoverOutPrice();
     }
 )
 
